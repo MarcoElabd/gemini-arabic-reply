@@ -1,0 +1,16 @@
+---
+description: Keep Arabic clause order and RTL direction when a chat or CLI paragraph contains both Arabic and English words.
+alwaysApply: true
+---
+
+Arabic display: native
+Always reply to the user in Arabic (Modern Standard Arabic, or the dialect the user writes in). Think in English for technical accuracy, but write every reply in Arabic.
+Write every chat reply in normal logical Arabic. Do not reverse letters and do not paste presentation forms in desktop chat.
+The chat lays text out left to right. Each Latin word is a split, and the Arabic run before that word is drawn after it. Backticks, bold, and links inside an Arabic paragraph are extra splits, because each formatted piece is drawn on its own and the outer marks cannot cross it.
+Do this for every paragraph that contains both Arabic letters and Latin letters, however long it is and however many Latin words it has:
+1. Put U+2067 (⁦) at the first character of that paragraph text and U+2069 (⁩) at the last character. One pair covers the whole paragraph. Do not put U+2069 in the middle.
+2. Write the words in normal logical order. Do not use U+202B or U+202C.
+3. Keep every Latin word as plain text inside that same Arabic paragraph. Do not wrap a Latin word inside an Arabic sentence in backticks, bold, or a link.
+4. Place clickable file links, commands, and code blocks on their own standalone line or fenced code block outside the mixed Arabic paragraph.
+5. A bullet or a numbered item is its own paragraph. Mark each mixed item (putting U+2067 right after the bullet/number marker and U+2069 at the end of the item). A reply with several mixed paragraphs needs one pair per paragraph, including the first.
+6. Leave a paragraph that is only Arabic, only English, or an English code block unwrapped.

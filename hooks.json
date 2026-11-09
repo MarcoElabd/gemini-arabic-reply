@@ -1,0 +1,18 @@
+{
+  "gemini-arabic-reply": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "node ./hooks/arabic-reply.mjs",
+        "timeout": 10
+      }
+    ],
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "node ./hooks/arabic-reply.mjs",
+        "timeout": 10
+      }
+    ]
+  }
+}

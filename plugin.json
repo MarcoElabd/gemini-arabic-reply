@@ -1,0 +1,21 @@
+{
+  "name": "gemini-arabic-reply",
+  "displayName": "Gemini Arabic Reply",
+  "version": "1.0.0",
+  "description": "Fixes Arabic RTL direction and mixed Arabic-English sentence order (U+2067..U+2069) in Antigravity/Gemini Chat and CLI, with automatic terminal BiDi detection and visual shaping.",
+  "author": {
+    "name": "MarcoElabd",
+    "url": "https://github.com/MarcoElabd"
+  },
+  "homepage": "https://github.com/MarcoElabd/gemini-arabic-reply",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarcoElabd/gemini-arabic-reply"
+  },
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "اشرح لي معمارية هذا المشروع وكيفية تشغيله باللغة العربية",
+    "راجع الكود الحالي واقترح تحسينات الأداء مع الحفاظ على ترتيب الجمل المختلطة",
+    "اضبط إعدادات عرض اللغة العربية واتجاه النصوص في الطرفية والشات"
+  ]
+}
